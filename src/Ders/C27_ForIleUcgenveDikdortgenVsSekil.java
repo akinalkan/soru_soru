@@ -97,9 +97,35 @@ public class C27_ForIleUcgenveDikdortgenVsSekil {
             }
             System.out.println("");
         }
+        System.out.println("");
+        System.out.println("******************************");
+
+            /*
+              A
+              AN
+              ANK
+              ANKA
+              ANKAR
+              ANKARA
+              ANKAR
+              ANKA
+              ANK
+              AN
+              A
+             */
+
+        String str = "ANKARA";
+        for (int i = 1; i <=str.length() ; i++) {
+            System.out.println(str.substring(0,i));
+
+        }
+        for (int i = 1; i <=str.length() ; i++) {
+            System.out.println(str.substring(0, str.length() - i));
+        }
 
 
 
 
-    }
+
+        }
 }
