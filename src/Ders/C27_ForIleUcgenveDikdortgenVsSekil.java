@@ -1,6 +1,7 @@
 package Ders;
 
 public class C27_ForIleUcgenveDikdortgenVsSekil {
+    //https://www.edureka.co/blog/30-pattern-programs-in-java/
     public static void main(String[] args) {
         /*
 

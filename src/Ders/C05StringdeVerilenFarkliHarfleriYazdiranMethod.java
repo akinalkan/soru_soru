@@ -18,8 +18,9 @@ public class C05StringdeVerilenFarkliHarfleriYazdiranMethod {
 
             for (int i = 1; i <islenecekKelime.length() ; i++) {
 
-                if (!benzersizInput.contains(islenecekKelime.substring(i,i+1))){
-                    System.out.print(", "+ islenecekKelime.substring(i,i+1));
+                if (!benzersizInput.contains(islenecekKelime.substring(i,i+1)))
+
+                {System.out.print(", "+ islenecekKelime.substring(i,i+1));
                     benzersizInput+=islenecekKelime.substring(i,i+1);
                 }
             }

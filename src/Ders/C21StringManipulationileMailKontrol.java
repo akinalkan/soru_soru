@@ -19,10 +19,10 @@ public class C21StringManipulationileMailKontrol {
 
     public static String emailKontrol() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Lutfen bir mail giriniz");
+        System.out.print("Lutfen bir mail giriniz : ");
         String email = scan.nextLine();
 
-        if (!(email.contains("@"))) {
+        if (email.indexOf('@')==-1) {
             System.out.println("Gecersiz email");
         }
 

@@ -1,9 +1,9 @@
-package array;
+package Ders;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-public class C06_DizininTersiniAlma {
+public class C36_DizininTersiniAlma {
     static void reverse(Integer dizi[])
     {
         Collections.reverse(Arrays.asList(dizi));
