@@ -22,6 +22,25 @@ public class C14_indexOfKarakterveKelimeTekrariKontrolu {
         }
 
          */
+        String isim = "JavaisalsoeaseyyJ";
+        String tekrarEdenHarf = "";
+
+        for (int i = 0; i <= isim.length() - 1; i++) {
+
+            for (int j = i+1; j <isim.length() ; j++) {
+                if(isim.charAt(i)==isim.charAt(j)){
+                    if(!(tekrarEdenHarf.contains(isim.substring(i,i+1)))){
+                        tekrarEdenHarf+=isim.substring(i,i+1);
+                    }
+
+                }
+
+            }
+        }
+
+        System.out.println(tekrarEdenHarf);
+        System.out.println("***********************************");
+
 
 
 
