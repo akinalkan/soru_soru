@@ -12,10 +12,11 @@ public class C02SwapTempKullanarak {
         int sayi3 = 0;
 
         System.out.println("swap'tan önce  " + "sayi1: " + sayi1 + "  " + "sayi2: " + sayi2);
-        //10 20  0
-        sayi3 = sayi2; //10  20  20
-        sayi2 = sayi1; //10  10  20
-        sayi1 = sayi3; // 20 10 20
+                       //s1 s2 s3
+                       //10 20  0
+        sayi3 = sayi2; //10 20  20
+        sayi2 = sayi1; //10 10  20
+        sayi1 = sayi3; //20 10  20
         System.out.println("swap'tan sonra  " + "sayi1: " + sayi1 + "  " + "sayi2: " + sayi2);
 
 

@@ -6,7 +6,8 @@ public class C03SwapTempKullanmadan {
         int sayi2 = 20;
 
         System.out.println("swaptan önce  " + "sayi1: " + sayi1 + "\tsayi2: " + sayi2);
-        //10  20
+                                 //s1  s2
+                                 //10  20
         sayi1 = sayi1 + sayi2;   //30  20
         sayi2 = sayi1 - sayi2;   //30  10
         sayi1 = sayi1 - sayi2;   //20  10

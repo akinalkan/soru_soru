@@ -13,6 +13,7 @@ public class C20VoidTypeMethodCreation {
         Scanner scan = new Scanner(System.in);
         System.out.println("Lutfen 3 basamakli bir sayi giriniz");
         int sayi = scan.nextInt();
+
         sayiTekCift(sayi);
         negatifPozitif(sayi);
         sayiKontrol(sayi);

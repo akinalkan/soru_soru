@@ -47,114 +47,84 @@ public class C25_SwitchCaseMethodluHesapMakinasi {
         System.out.println("****************************************");
         System.out.println(islemler);
         System.out.println("****************************************");
-        label:
+
         while (true) {
             System.out.print("İşlemi Seçiniz : ");
             String islem = scanner.nextLine();
 
-            switch (islem) {
-                case "q":
+            if ("q".equals(islem)) {
+                System.out.println("Programdan Çıkılıyor...");
+                break ;
+            } else if ("1".equals(islem)) {
+                System.out.print("Kaç değer toplayacaksınız ? (2 veya 3): ");
 
-                    System.out.println("Programdan Çıkılıyor...");
-                    break label;
-                case "1": {
-                    System.out.print("Kaç değer toplayacaksınız ? (2 veya 3): ");
+                int kacsayi = scanner.nextInt();
 
-                    int kacsayi = scanner.nextInt();
-
-                    switch (kacsayi) {
-                        case 2 -> {
-                            System.out.print("a:");
-                            int a = scanner.nextInt();
-                            System.out.print("b:");
-                            int b = scanner.nextInt();
-                            scanner.nextLine();
-
-                            System.out.println("Girilen sayıların toplamları : " + (toplama(a, b)));
-
-
-                            break;
-                        }
-                        case 3 -> {
-                            System.out.print("a:");
-                            int a = scanner.nextInt();
-                            System.out.print("b:");
-                            int b = scanner.nextInt();
-                            System.out.print("c:");
-                            int c = scanner.nextInt();
-                            scanner.nextLine();
-
-                            System.out.println("Girilen sayıların toplamları : " + (toplama(a, b, c)));
-
-                            break;
-                        }
-                        default -> System.out.println("Bunun için uygun metod bulunmuyor...");
-                    }
-
-
-                    break;
-                }
-                case "2": {
+                if (kacsayi == 2) {
                     System.out.print("a:");
                     int a = scanner.nextInt();
                     System.out.print("b:");
                     int b = scanner.nextInt();
                     scanner.nextLine();
 
-                    System.out.println("Girilen Sayıları Farkları : " + cikarma(a, b));
+                    System.out.println("Girilen sayıların toplamları : " + (toplama(a, b)));
+                } else if (kacsayi == 3) {
+                    System.out.print("a:");
+                    int a = scanner.nextInt();
+                    System.out.print("b:");
+                    int b = scanner.nextInt();
+                    System.out.print("c:");
+                    int c = scanner.nextInt();
+                    scanner.nextLine();
 
-                    break;
+                    System.out.println("Girilen sayıların toplamları : " + (toplama(a, b, c)));
+                } else {
+                    System.out.println("Bunun için uygun metod bulunmuyor...");
                 }
-                case "3": {
-                    System.out.print("Kaç değer çarpacaksınız ? (2 veya 3): ");
+            } else if ("2".equals(islem)) {
+                System.out.print("a:");
+                int a = scanner.nextInt();
+                System.out.print("b:");
+                int b = scanner.nextInt();
+                scanner.nextLine();
 
-                    int kacsayi = scanner.nextInt();
+                System.out.println("Girilen Sayıları Farkları : " + cikarma(a, b));
+            } else if ("3".equals(islem)) {
+                System.out.print("Kaç değer çarpacaksınız ? (2 veya 3): ");
 
-                    switch (kacsayi) {
-                        case 2 -> {
-                            System.out.print("a:");
-                            int a = scanner.nextInt();
-                            System.out.print("b:");
-                            int b = scanner.nextInt();
-                            scanner.nextLine();
+                int kacsayi = scanner.nextInt();
 
-                            System.out.println("Girilen sayıların çarpımları : " + (carpma(a, b)));
-
-
-                            break;
-                        }
-                        case 3 -> {
-                            System.out.print("a:");
-                            int a = scanner.nextInt();
-                            System.out.print("b:");
-                            int b = scanner.nextInt();
-                            System.out.print("c:");
-                            int c = scanner.nextInt();
-                            scanner.nextLine();
-
-                            System.out.println("Girilen sayıların çarpımları : " + (carpma(a, b, c)));
-
-                            break;
-                        }
-                        default -> System.out.println("Bunun için uygun metod bulunmuyor...");
-                    }
-
-                    break;
-                }
-                case "4": {
+                if (kacsayi == 2) {
                     System.out.print("a:");
                     int a = scanner.nextInt();
                     System.out.print("b:");
                     int b = scanner.nextInt();
                     scanner.nextLine();
 
-                    System.out.println("Girilen Sayıların Bölümü : " + bolme(a, b));
+                    System.out.println("Girilen sayıların çarpımları : " + (carpma(a, b)));
+                } else if (kacsayi == 3) {
+                    System.out.print("a:");
+                    int a = scanner.nextInt();
+                    System.out.print("b:");
+                    int b = scanner.nextInt();
+                    System.out.print("c:");
+                    int c = scanner.nextInt();
+                    scanner.nextLine();
 
-                    break;
+                    System.out.println("Girilen sayıların çarpımları : " + (carpma(a, b, c)));
+                } else {
+                    System.out.println("Bunun için uygun metod bulunmuyor...");
                 }
-                default:
-                    System.out.println("Geçersiz İşlem...");
-                    break;
+            } else if ("4".equals(islem)) {
+                System.out.print("a:");
+                int a = scanner.nextInt();
+                System.out.print("b:");
+                int b = scanner.nextInt();
+                scanner.nextLine();
+
+                System.out.println("Girilen Sayıların Bölümü : " + bolme(a, b));
+            } else {
+                System.out.println("Geçersiz İşlem...");
             }
 
 

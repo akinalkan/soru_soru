@@ -7,9 +7,10 @@ public class C17_KrediKarti {
         String isim="Suleyman";
         String soyIsim="Karanfil";
         String kartNo="1234 6589 7458 9658";
-        System.out.println(isim.substring(3));// eyman
-        System.out.println(soyIsim.substring(soyIsim.length()-3));//fil
-        System.out.println(isim.substring(2,4));//le
+        //System.out.println(isim.substring(3));// eyman
+        //System.out.println(soyIsim.substring(soyIsim.length()-3));//fil
+        //System.out.println(isim.substring(2,4));//le
+
         //isim ve soyismin ilk harfi büyük harf geriye kalan *
         //kart no'nun ilk 4 rakamı görülsün geriye kalan *
         String isimIlkHarf=isim.substring(0,1).toUpperCase();

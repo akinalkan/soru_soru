@@ -11,7 +11,9 @@ public class C19_ReturnTypeMethodCreation {
         //NOT: Programin ilerleyen kisimlarinda isim ve soyismi bu sekilde kullamak istiyoruz
         String isim="Enes";
         String soyisim="Bozkurt";
+
         String gizliIsim=isimGizle(isim,soyisim);
+
         System.out.println(gizliIsim);//E*** B******
         System.out.println(isim+" "+soyisim);//Enes Bozkurt
         System.out.println("***********************************");
@@ -74,7 +76,7 @@ public class C19_ReturnTypeMethodCreation {
         System.out.println("ayin kacinci gunu  oldugunu tam sayi olarak yaziniz(1-31)");
         int gun=scan.nextInt();
         if(gun<=0 || gun>31){
-            System.out.println("gun  no olarak1-31 arasinda sayi olarak yaziniz");
+            System.out.println("gun  no olarak 1-31 arasinda sayi olarak yaziniz");
         }else if(gun<10){
             tarih+="0"+gun;
 
